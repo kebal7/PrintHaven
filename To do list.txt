@@ -1,0 +1,40 @@
+To do list accoring to marking scheme
+1) Create Wireframe for website
+2) Navigation Bar including (working : try) search bar
+	some animation on each link on hover
+3) Home Page(Breif Description, Most sold, Flash Sales)
+4) Blog Page(How technology have affected daily life and business)
+5) Product page(grid layout for ease), Name, Price, image .....
+	if feasible( filter according to type, price ...)
+	Drop shadow on hover
+6) Research Section(Unclear)
+7) About Us Grid bhitra product ma jastai(golo golo)
+	portfolio afno afai
+8) Functional form 
+9) Contact Us Page
+	Simple messaging form
+	if allowed embed google map
+	email, phone no, location .....
+10) Footer
+	copyright wala text
+	sitemap
+	phone no
+	maybe map alsoo i dunno
+
+
+11) pop up using JS	
+To be discussed 
+	Individual Printer lai page banaune ki nabanaunii
+	github woking
+	good naming convention
+	color sceme
+	Kasle kun garne
+Unclear or Not reached at class
+	why form validation
+	Dynamic Change With JS(nav bar:Search)		
+	TESTING section
+	Research Section
+
+Proposal:
+	About us ma printer wala katha continue
+	Our team ma portfolio
