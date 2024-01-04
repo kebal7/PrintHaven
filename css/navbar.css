@@ -67,6 +67,6 @@ nav{
     text-transform:uppercase;
 }
 
-a:hover{
+.nav-links a:hover{
     color: #9500ff;
 }

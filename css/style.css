@@ -34,10 +34,25 @@ a{
 }
 
 .sidebar-links li{
+    display: inline-flex;
     padding: 10px 20px;
 }
 
+.sidebar-links li img{
+    width: 24px;
+    height: 24px;
+}
+
+
+.sidebar-links p{
+    color: #343434;
+}
+
 .sidebar-links li:hover{
-    background-color: #3e37374d;;
+    background-color: #3e37374d;
+    cursor: pointer;
+    p{
+        color: purple;
+    }
 }
 
