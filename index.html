@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
     <style>
-        .welcome{
+        /* .welcome{
             margin-left: 10%;
             margin-top: 12%; 
             color: #343434;
@@ -18,7 +18,8 @@
             margin: 25px 0;
             border-radius: 10px;
             display: inline-block;
-        }
+        } */
+
     </style>
 <body>
     
@@ -40,8 +41,29 @@
             <li>
                 <a href="index.html">Home</a>
             </li>
-            <li>
-                <a href="index.html">Products</a>
+           
+            <li class="dropdown">
+                <a href ="index.html">Products &#9662;</i></a>
+
+                <section class="nav-submenu">
+                    <ul class="nav-submenu-links">
+                        <li onclick="window.location.href='index.html';">
+                            <p>Inject Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Laser Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Thermal Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Character Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Line Printer</p>
+                        </li>
+                    </ul>
+                </section>
             </li>
             <li>
                 <a href="index.html">Contact Us</a>
@@ -56,7 +78,6 @@
         <ul class="sidebar-links">
             <li onclick="window.location.href='index.html';">
                 <p>Inject Printer</p>
-                <img src="media/rightpointer.png">
             </li>
             <li onclick="window.location.href='index.html';">
                 <p>Laser Printer</p>
@@ -73,7 +94,7 @@
         </ul>
     </section>
 
-    <section class="welcome">
+    <!-- <section class="welcome">
         <h1 style="font-size: 30px; text-transform:uppercase;">Welcome To Print Haven</h1>
         <p>
             Ink, Paper, Possiblities<br>
@@ -82,7 +103,7 @@
             "Unleash Your Creativity with Us"
         </p>
         <a href="shop.html" style="color: #ffffff;">Shop Now</a>
-    </section>
+    </section> -->
 
 </body>
 </html>
