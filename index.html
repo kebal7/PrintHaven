@@ -64,6 +64,36 @@
                 color: rgba(0, 0, 0, 0.8);
             }
         }
+
+        .printer-catagories{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+            column-gap: 7px;
+            row-gap: 7px;
+            margin: 20px 150px;
+        }
+
+        .printer-catagories .product-container{
+            margin-top: 7px;
+            margin-bottom: 7px;
+            margin-left: 7px;
+            margin-right: 7px;
+            position: relative;
+            display: block;
+            cursor: pointer;
+            background-color: #f3f1f5;
+            h2{
+                position: absolute;
+                bottom: 8%;
+                left: 3%;
+            }
+        }
+
+        .printer-catagories .product-container img{
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
 <body>
     
@@ -122,9 +152,8 @@
         <section class="welcome">
             <h1 style="font-size: 30px; text-transform:uppercase;">Welcome To Print Haven</h1>
             <p>
-                Ink, Paper, Possiblities<br>
-            </p>
-            <p>
+                Ink, Paper, Possiblities
+                <br>
                 "Unleash Your Creativity with Us"
             </p>
             <a href="shop.html" style="color: #ffffff;">Shop Now</a>
@@ -159,6 +188,40 @@
                 <p>Worry free shopping</p>
             </div>
         </div>
+    </section>
+
+    <section class="printer-catagories">
+
+        <div class="product-container" onclick="window.location.href='';">
+            <img src="media/printercatagories/cat-injectprinter.png"></img>
+            <h2>Inject Printer</h2>
+          </div>
+
+        <div class="product-container" onclick="window.location.href='';">
+            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
+            <h2>Good Printer</h2>
+          </div>
+
+        <div class="product-container" onclick="window.location.href='';">
+            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
+            <h2>Good Printer</h2>
+          </div>
+          
+        <div class="product-container" onclick="window.location.href='';">
+            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
+            <h2>Good Printer</h2>
+          </div>
+
+        <div class="product-container" onclick="window.location.href='';">
+            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
+            <h2>Good Printer</h2>
+          </div>
+
+        <div class="product-container" onclick="window.location.href='';">
+            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
+            <h2>Good Printer</h2>
+          </div>
+
     </section>
 
 
