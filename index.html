@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
     <style>
-        /* .welcome{
-            margin-left: 10%;
+        .welcome{
+            margin-left: 8%;
             margin-top: 12%; 
             color: #343434;
+            position: absolute;
         }
         .welcome a{
             background-color: #9500ff;
@@ -18,8 +19,48 @@
             margin: 25px 0;
             border-radius: 10px;
             display: inline-block;
-        } */
+        }
 
+        .banner{
+            width: 100%;
+            height: 70vh;
+            background-image: url('media/banner2.png');
+            background-size: cover;
+        }
+
+        .good-stuffs{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .good-stuffs div{
+            border: none;
+            padding: 10px;
+            height: 70px;
+            width: 330px;
+            display: flex;
+            align-items: center;
+        }
+
+        .good-stuffs .icons{
+            width: 30px;
+            padding: 4px 10px 4px 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .good-stuffs .icons img{
+            width: 50px;
+        }
+
+        .good-stuffs .good-stuffs-text{
+            flex-direction: column;
+            border: none;
+            justify-content: center;
+        }
     </style>
 <body>
     
@@ -43,7 +84,7 @@
             </li>
            
             <li class="dropdown">
-                <a href ="index.html">Products</i></a>
+                <a href ="pages/products.html">Products</i></a>
 
                 <section class="nav-submenu">
                     <ul class="nav-submenu-links">
@@ -74,36 +115,49 @@
         </ul>
     </nav>
 
-    <section class="sidebar">
-        <ul class="sidebar-links">
-            <li onclick="window.location.href='index.html';">
-                <p>Inject Printer</p>
-            </li>
-            <li onclick="window.location.href='index.html';">
-                <p>Laser Printer</p>
-            </li>
-            <li onclick="window.location.href='index.html';">
-                <p>Thermal Printer</p>
-            </li>
-            <li onclick="window.location.href='index.html';">
-                <p>Character Printer</p>
-            </li>
-            <li onclick="window.location.href='index.html';">
-                <p>Line Printer</p>
-            </li>
-        </ul>
+    <section class="banner">
+        <section class="welcome">
+            <h1 style="font-size: 30px; text-transform:uppercase;">Welcome To Print Haven</h1>
+            <p>
+                Ink, Paper, Possiblities<br>
+            </p>
+            <p>
+                "Unleash Your Creativity with Us"
+            </p>
+            <a href="shop.html" style="color: #ffffff;">Shop Now</a>
+        </section>
     </section>
 
-    <!-- <section class="welcome">
-        <h1 style="font-size: 30px; text-transform:uppercase;">Welcome To Print Haven</h1>
-        <p>
-            Ink, Paper, Possiblities<br>
-        </p>
-        <p>
-            "Unleash Your Creativity with Us"
-        </p>
-        <a href="shop.html" style="color: #ffffff;">Shop Now</a>
-    </section> -->
+    <section class="good-stuffs">
+        <div>
+            <div class="icons">
+                <img src="media/icons/delivery-truck.png">
+            </div>
+            <div class="good-stuffs-text">
+                <h3>Free Shipping</h3>
+                <p>On all orders</p>
+            </div>
+        </div>
+        <div  style="border-right: 1px solid #343434; border-left: 1px solid #343434;">
+            <div class="icons">
+                <img src="media/icons/protection.png">
+            </div>
+            <div class="good-stuffs-text">
+                <h3>5-Years Warranty</h3>
+                <p>Quick response 24/7</p>
+            </div>
+        </div>
+        <div>
+            <div class="icons">
+                <img src="media/icons/give-money.png">
+            </div>
+            <div class="good-stuffs-text">
+                <h3>Money Back Guarantee</h3>
+                <p>Worry free shopping</p>
+            </div>
+        </div>
+    </section>
+
 
 </body>
 </html>

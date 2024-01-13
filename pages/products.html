@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        main
+        {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+            column-gap: 7px;
+            row-gap: 7px;
+        }
+
+        .product-container
+        {
+            margin-top: 7px;
+            margin-bottom: 7px;
+            margin-left: 7px;
+            margin-right: 7px;
+            position: relative;
+            display: block;
+            cursor: pointer;
+            background-color: #f3f1f5;
+        }
+
+
+        main img
+        {
+            width: 98%;
+            height: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+  <nav>
+    <link rel="stylesheet" href="../css/navbar.css">
+
+        <div class="logo">
+            <a href="../index.html">Print haven</a>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-btn">
+                <img src="../media/SearchIcon.png">
+            </button>
+        </div>
+
+    <ul class="nav-links">
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+       
+        <li class="dropdown">
+            <a href ="products.html">Products</i></a>
+
+            <section class="nav-submenu">
+                <ul class="nav-submenu-links">
+                    <li onclick="window.location.href='index.html';">
+                        <p>Inject Printer</p>
+                    </li>
+                    <li onclick="window.location.href='index.html';">
+                        <p>Laser Printer</p>
+                    </li>
+                    <li onclick="window.location.href='index.html';">
+                        <p>Thermal Printer</p>
+                    </li>
+                    <li onclick="window.location.href='index.html';">
+                        <p>Character Printer</p>
+                    </li>
+                    <li onclick="window.location.href='index.html';">
+                        <p>Line Printer</p>
+                    </li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <a href="index.html">Contact Us</a>
+        </li>
+        <li>
+            <a href="index.html">About Us</a>
+        </li>
+    </ul>
+  </nav>
+
+
+    <main>
+      <div class="product-container" onclick="window.location.href='';">
+          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+          <h2>Good Printer</h2>
+          <p>
+            Best Selling Printer for Office and Home use
+          </p>  
+            <p>HP</p>
+          <span style="font-size: 20px; color: purple;">&#9734; &#9733; </span>
+        </div>
+      <div class="product-container" onclick="window.location.href='';">
+          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+          <h2>Good Printer</h2>
+          <p>
+            Best Selling Printer for Office and Home use
+          </p>  
+            <p>HP</p>
+        </div>
+      <div class="product-container" onclick="window.location.href='';">
+          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+          <h2>Good Printer</h2>
+          <p>
+            Best Selling Printer for Office and Home use
+          </p>  
+            <p>HP</p>
+        </div>
+      <div class="product-container" onclick="window.location.href='';">
+          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+          <h2>Good Printer</h2>
+          <p>
+            Best Selling Printer for Office and Home use
+          </p>  
+            <p>HP</p>
+          <span style="font-size: 20px; color: purple;">&#9734; &#9733; </span>
+        </div>
+      <div class="product-container" onclick="window.location.href='';">
+          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+          <h2>Good Printer</h2>
+          <p>
+            Best Selling Printer for Office and Home use
+          </p>  
+            <p>HP</p>
+        </div>
+      <div class="product-container" onclick="window.location.href='';">
+          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+          <h2>Good Printer</h2>
+          <p>
+            Best Selling Printer for Office and Home use
+          </p>  
+            <p>HP</p>
+        </div>
+    </main>
+
+</body>
+</html>
