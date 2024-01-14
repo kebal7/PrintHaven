@@ -69,7 +69,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
             column-gap: 7px;
-            row-gap: 7px;
+            row-gap: 8px;
             margin: 20px 150px;
         }
 
@@ -79,13 +79,19 @@
             margin-left: 7px;
             margin-right: 7px;
             position: relative;
-            display: block;
+            display: flex;
+            flex-direction: column;
             cursor: pointer;
-            background-color: #f3f1f5;
-            h2{
+            background-color: #f3f1f500;
+            .title{
                 position: absolute;
-                bottom: 8%;
-                left: 3%;
+                top: 40%;
+                left: 5%;
+                font-size: small;
+            }
+
+            p{
+                color: rgba(0, 0, 0, 0.7);
             }
         }
 
@@ -193,34 +199,53 @@
     <section class="printer-catagories">
 
         <div class="product-container" onclick="window.location.href='';">
-            <img src="media/printercatagories/cat-injectprinter.png"></img>
-            <h2>Inject Printer</h2>
+            <img src="media/printercatagories/inject.png"></img>
+            <div class="title">
+                <h2>Inject Printer</h2>
+                <p>View all</p>
+            </div>
           </div>
-
+ 
         <div class="product-container" onclick="window.location.href='';">
-            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
-            <h2>Good Printer</h2>
+            <img src="media/printercatagories/laser.png"></img>
+            <div class="title">
+                <h2>Laser Printer</h2>
+                <p>View all</p>
+            </div>
           </div>
-
+ 
         <div class="product-container" onclick="window.location.href='';">
-            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
-            <h2>Good Printer</h2>
+            <img src="media/printercatagories/thermal.png"></img>
+            <div class="title">
+                <h2>Thermal Printer</h2>
+                <p>View all</p>
+            </div>
           </div>
-          
+ 
         <div class="product-container" onclick="window.location.href='';">
-            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
-            <h2>Good Printer</h2>
+            <img src="media/printercatagories/character.png"></img>
+            <div class="title">
+                <h2>Character Printer</h2>
+                <p>View all</p>
+            </div>
           </div>
-
+ 
         <div class="product-container" onclick="window.location.href='';">
-            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
-            <h2>Good Printer</h2>
+            <img src="media/printercatagories/line.png"></img>
+            <div class="title">
+                <h2>Line Printer</h2>
+                <p>View all</p>
+            </div>
           </div>
-
+ 
         <div class="product-container" onclick="window.location.href='';">
-            <img src="media/printerimages/HPOfficeJetPo9015e.png"></img>
-            <h2>Good Printer</h2>
+            <img src="media/printercatagories/cartidage.png"></img>
+            <div class="title">
+                <h2>Other Components</h2>
+                <p>View all</p>
+            </div>
           </div>
+ 
 
     </section>
 

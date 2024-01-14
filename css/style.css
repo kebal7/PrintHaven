@@ -5,12 +5,12 @@
 }
 
 body{
-    background-color: #d8d5d0;
+    background-color: rgb(254, 253, 253);
 }
 
 a{
     text-decoration: none;
-    color: #343434;
+    color: #f6f5f5;
 }
 
 .welcome a:hover{
