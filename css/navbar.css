@@ -111,3 +111,44 @@ nav{
     }
 }
 
+.footer{
+    display: flex;
+    background-color: #34343429;
+    justify-content: space-evenly;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 18px;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: #060606;
+}
+
+.footer li a:hover{
+    text-decoration: underline;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact li{
+    display: inline-flex;
+    gap: 7px;
+}
+
+.contact li img{
+    width: 20px;
+}
+
+
+
+
