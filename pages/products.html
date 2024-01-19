@@ -13,29 +13,49 @@
             grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
             column-gap: 7px;
             row-gap: 7px;
+            margin: 20px 100px;
         }
 
         .product-container
         {
-            margin-top: 7px;
-            margin-bottom: 7px;
-            margin-left: 7px;
-            margin-right: 7px;
-            position: relative;
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             cursor: pointer;
             background-color: #f3f1f5;
+            padding: 20px 20px;
         }
 
+        .product-container:hover{
+          background-color: rgba(46, 46, 46, 0.126)
+        }
+
+      .product-container .price
+      {
+          display: inline-flex;
+          align-items: center;
+          gap: 20px;
+      }
+
+      .product-container .price .sellingprice
+      {
+        font-size: 20px;
+        font-weight: bold;
+        color: purple;
+      }
+
+      .product-container .price .actualprice
+      {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.7);
+      }
 
         main img
         {
             width: 98%;
+            margin-top: 10px;
+            margin-bottom: 10px;
             height: auto;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            margin-left: 5px;
-            margin-right: 5px;
         }
         
     </style>
@@ -92,59 +112,87 @@
     </ul>
   </nav>
 
-
-    <main>
-      <div class="product-container" onclick="window.location.href='';">
-          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
-          <h2>Good Printer</h2>
-          <p>
-            Best Selling Printer for Office and Home use
-          </p>  
-            <p>HP</p>
-          <span style="font-size: 20px; color: purple;">&#9734; &#9733; </span>
+  <main>
+    <div class="product-container" onclick="window.location.href='';">
+        <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+        <h2>HP OfficeJet Pro 8025e</h2>
+        <span style="font-size: 20px; color: rgba(67, 62, 67, 0.445);">&#9733; &#9733; &#9733; &#9733; &#9734; </span>
+        <p>
+          Best Selling Printer for Office and Home use <br>
+        </p> 
+        <div class="price">
+          <p class="sellingprice">Rs. 25,000</p>
+          <s  class="actualprice">Rs. 30,000</s> 
         </div>
-      <div class="product-container" onclick="window.location.href='';">
-          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
-          <h2>Good Printer</h2>
-          <p>
-            Best Selling Printer for Office and Home use
-          </p>  
-            <p>HP</p>
+      </div>
+       
+    <div class="product-container" onclick="window.location.href='';">
+        <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+        <h2>HP OfficeJet Pro 8025e</h2>
+        <span style="font-size: 20px; color: rgba(67, 62, 67, 0.445);">&#9733; &#9733; &#9733; &#9733; &#9734; </span>
+        <p>
+          Best Selling Printer for Office and Home use <br>
+        </p> 
+        <div class="price">
+          <p class="sellingprice">Rs. 25,000</p>
+          <s  class="actualprice">Rs. 30,000</s> 
         </div>
-      <div class="product-container" onclick="window.location.href='';">
-          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
-          <h2>Good Printer</h2>
-          <p>
-            Best Selling Printer for Office and Home use
-          </p>  
-            <p>HP</p>
+      </div>
+       
+    <div class="product-container" onclick="window.location.href='';">
+        <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+        <h2>HP OfficeJet Pro 8025e</h2>
+        <span style="font-size: 20px; color: rgba(67, 62, 67, 0.445);">&#9733; &#9733; &#9733; &#9733; &#9734; </span>
+        <p>
+          Best Selling Printer for Office and Home use <br>
+        </p> 
+        <div class="price">
+          <p class="sellingprice">Rs. 25,000</p>
+          <s  class="actualprice">Rs. 30,000</s> 
         </div>
-      <div class="product-container" onclick="window.location.href='';">
-          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
-          <h2>Good Printer</h2>
-          <p>
-            Best Selling Printer for Office and Home use
-          </p>  
-            <p>HP</p>
-          <span style="font-size: 20px; color: purple;">&#9734; &#9733; </span>
+      </div>
+       
+    <div class="product-container" onclick="window.location.href='';">
+        <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+        <h2>HP OfficeJet Pro 8025e</h2>
+        <span style="font-size: 20px; color: rgba(67, 62, 67, 0.445);">&#9733; &#9733; &#9733; &#9733; &#9734; </span>
+        <p>
+          Best Selling Printer for Office and Home use <br>
+        </p> 
+        <div class="price">
+          <p class="sellingprice">Rs. 25,000</p>
+          <s  class="actualprice">Rs. 30,000</s> 
         </div>
-      <div class="product-container" onclick="window.location.href='';">
-          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
-          <h2>Good Printer</h2>
-          <p>
-            Best Selling Printer for Office and Home use
-          </p>  
-            <p>HP</p>
+      </div>
+       
+    <div class="product-container" onclick="window.location.href='';">
+        <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+        <h2>HP OfficeJet Pro 8025e</h2>
+        <span style="font-size: 20px; color: rgba(67, 62, 67, 0.445);">&#9733; &#9733; &#9733; &#9733; &#9734; </span>
+        <p>
+          Best Selling Printer for Office and Home use <br>
+        </p> 
+        <div class="price">
+          <p class="sellingprice">Rs. 25,000</p>
+          <s  class="actualprice">Rs. 30,000</s> 
         </div>
-      <div class="product-container" onclick="window.location.href='';">
-          <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
-          <h2>Good Printer</h2>
-          <p>
-            Best Selling Printer for Office and Home use
-          </p>  
-            <p>HP</p>
+      </div>
+       
+    <div class="product-container" onclick="window.location.href='';">
+        <img src="../media/printerimages/HPOfficeJetPo9015e.png"></img>
+        <h2>HP OfficeJet Pro 8025e</h2>
+        <span style="font-size: 20px; color: rgba(67, 62, 67, 0.445);">&#9733; &#9733; &#9733; &#9733; &#9734; </span>
+        <p>
+          Best Selling Printer for Office and Home use <br>
+        </p> 
+        <div class="price">
+          <p class="sellingprice">Rs. 25,000</p>
+          <s  class="actualprice">Rs. 30,000</s> 
         </div>
-    </main>
+      </div>
+       
+  </main>
+  
 
 </body>
 </html>
