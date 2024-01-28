@@ -5,6 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HP Office</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .productInfo{
+            display: flex;
+            margin: 50px 100px;
+            gap: 50px;
+        }
+
+        .images{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            justify-content: center;
+            gap: 1px;
+        }
+
+        .images .main-image{
+            img{
+                height: 411px;
+                width: 697px;
+            }
+        }
+
+        .image-list img {
+            width: 170px;
+            cursor: pointer;
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info .reviews{
+            display: inline-flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .info .price{
+            display: inline-flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .info .price .sellingprice{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .info .price .actualprice{
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .info .buttons{
+            display: inline-flex;
+            gap: 10px;
+        }
+
+        .info .buttons button{
+            height: 54px;
+            width: 176px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+        }
+
+        .buy-btn{
+            background-color: purple;
+        }
+        .cart-btn{
+            background-color: #f29d00;
+        }
+
+        .good-stuffs{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .good-stuffs div{
+            height: 20px;
+            width: 120px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .good-stuffs .icons{
+            width: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .good-stuffs .icons img{
+            width: 35px;
+        }
+
+        .good-stuffs .good-stuffs-text{
+            border: none;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+
+        table{
+            margin-left: 100px;
+            th{
+                text-align: left;
+                padding: 10px 15px;
+            }
+
+            td{
+                text-align: left;
+                padding: 10px 15px;
+            }
+        }
+        
+
+    </style>
+    
+    <script>
+        function changeImage(event) {
+            const clickedImage = event.target;
+
+            if (clickedImage.tagName === 'IMG') {
+                const newSrc = clickedImage.src;
+
+                document.getElementById('mainImage').src = newSrc;
+            }
+        }
+    </script>
+    
 </head>
 <body>
     
@@ -62,5 +203,142 @@
         </ul>
     </nav>
 
+    <section class="productInfo">
+        <div class="images">
+            <div class="main-image">
+                <img src="../media/printerimages/New Project (3).png" id="mainImage">
+            </div>
+            <div class="image-list" onclick="changeImage(event)">
+                <img src="../media/printerimages/New Project (3).png">
+                <img src="../media/printerimages/HPOfficeJetPo9015e.png">
+                <img src="../media/printerimages/New Project (3).png">
+                <img src="../media/printerimages/New Project (3).png">
+            </div>
+        </div>
+        
+
+        <div class="info">
+            <h2>
+                HP OfficeJet Pro 8025e All-in-One Printer 
+            </h2>
+                <ul>
+                    <li>
+                        <p>Fast color print, copy, scan, fax, 2-sided prints, mobile/wireless printing</p>
+                    </li>
+                    <li>
+                        <p>Pro quality color for forms, reports, brochures and presentations</p>
+                    </li>
+                    <li>
+                        <p>Includes 6 months Instant Ink and more with optional HP+ printing system </p>
+                    </li>
+                </ul>
+            <div class="reviews">
+                <p style="font-size: 20px;">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </p>
+                <p style="font-size: 15px; color: rgba(0, 0, 0, 0.7);">
+                    4.0 rating (77 reviews)
+                </p>
+            </div>
+
+            <div class="price">
+                <p class="sellingprice">Rs. 25,000</p>
+                <s  class="actualprice">Rs. 30,000</s> 
+                <p>30% off</p>
+            </div>
+            <div class="buttons">
+                <button class="buy-btn">Buy Now</button>
+                <button class="cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="good-stuffs">
+                <div>
+                    <div class="icons">
+                        <img src="../media/icons/delivery-truck.png">
+                    </div>
+                    <div class="good-stuffs-text">
+                        <p>Free <br>Shipping</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="icons">
+                        <img src="../media/icons/protection.png">
+                    </div>
+                    <div class="good-stuffs-text">
+                        <p>5-Years <br> Warranty</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="icons">
+                        <img src="../media/icons/give-money.png">
+                    </div>
+                    <div class="good-stuffs-text">
+                        <p>Money Back <br>Guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <table border="1px">
+            <tr>
+                <th colspan="2" style="font-size: 25px;">Specifications</th>
+            </tr>
+            <tr>
+                <th>Functions</th>
+                <td>Print, copy, scan, fax</td>
+            </tr>
+            <tr>
+                <th>Display</th>
+                <td>2.7" (6.86 cm) Capacitive Touchscreen CGD (Color Graphic Display)</td>
+            </tr>
+            <tr>
+                <th>Processor Speed</th>
+                <td>1.2 GHz</td>
+            </tr>
+            <tr>
+                <th>Memory</th>
+                <td>256MB</td>
+            </tr>
+            <tr>
+                <th>Compatible Operating Systems</th>
+                <td>Windows 11; Windows 10; Windows 8; 
+                    Windows 7; Windows Server; ChromeOS</td>
+            </tr>
+            <tr>
+                <th>Max. Print Resolution</th>
+                <td>Up to 4800 x 1200 optimized dpi on HP 
+                    Advance Photo Paper 1200 x 1200 dpi input</td>
+            </tr>
+            <tr>
+                <th>Connectivity</th>
+                <td>1 USB 2.0; 1 Ethernet; 1 Wireless 802.11a/b/g/n; 1 RJ-11 Fax</td>
+            </tr>
+            <tr>
+                <th>Double-Sided Printing</th>
+                <td>Automatic(standard)</td>
+            </tr>
+            <tr>
+                <th>Software included</th>
+                <td>HP Printer Software, Shop for Supplies Online</td>
+            </tr>
+            <tr>
+                <th>Number of print cartidage</th>
+                <td>4 (1 each black, cyan, magenta, yellow)</td>
+            </tr>
+            <tr>
+                <th>Maximum Paper Size</th>
+                <td>L120</td>
+            </tr>
+            <tr>
+                <th>Dimensions(W X D X H)</th>
+                <td>18.11 X 13.43 x 9.21 in</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td>18.04 Ib</td>
+            </tr>
+        </table>
 </body>
 </html>
