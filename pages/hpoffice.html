@@ -130,8 +130,93 @@
                 padding: 10px 15px;
             }
         }
-        
 
+        .reviews{
+            margin: 20px 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+
+        .reviews .reviewCard{
+            width: 70%;
+            border-top: 1px solid #343434;
+            padding: 10px;
+        }
+
+        .reviews .reviewCard .user{
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .userIcon{
+            width: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .userIcon img{
+            width: 35px;
+        }
+        
+        .login-form{
+            display: none;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: #f7f7f7;
+            width: 400px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-container .login-txt{
+            font-size: 20px;
+            font-weight: 600;
+            margin: 10px 10px;
+        }
+
+        form{
+            margin: 10px 10px;
+        }
+
+        form .data label{
+            font-size: 15px;
+        }
+
+        form .data input{
+            height: 100%;
+            width: 100%;
+            padding: 10px 10px;
+        }
+
+        form .login-btn button{
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            background-color: #f29d00;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        form a{
+            color: blue;
+        }
+
+        form a:hover{
+            text-decoration: underline;
+        }
     </style>
     
     <script>
@@ -144,6 +229,19 @@
                 document.getElementById('mainImage').src = newSrc;
             }
         }
+
+        function showLogin()
+        {
+            var p1 = document.getElementById('loginForm');
+            p1.style.display = "flex";
+        }
+        
+        function hideLogin()
+        {
+            var p1 = document.getElementById('loginForm');
+            p1.style.display = "none";
+        }
+
     </script>
     
 </head>
@@ -153,7 +251,7 @@
         <link rel="stylesheet" href="../css/navbar.css">
 
             <div class="logo">
-                <a href="index.html">Print haven</a>
+                <a href="../index.html">Print haven</a>
             </div>
 
             <div class="search-container">
@@ -165,11 +263,11 @@
 
         <ul class="nav-links">
             <li>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
             </li>
            
             <li class="dropdown">
-                <a href ="pages/products.html">Products</i></a>
+                <a href ="products.html">Products</i></a>
 
                 <section class="nav-submenu">
                     <ul class="nav-submenu-links">
@@ -232,7 +330,7 @@
                         <p>Includes 6 months Instant Ink and more with optional HP+ printing system </p>
                     </li>
                 </ul>
-            <div class="reviews">
+            <div class="rating">
                 <p style="font-size: 20px;">
                     &#9733; &#9733; &#9733; &#9733; &#9734;
                 </p>
@@ -247,8 +345,8 @@
                 <p>30% off</p>
             </div>
             <div class="buttons">
-                <button class="buy-btn">Buy Now</button>
-                <button class="cart-btn">Add to Cart</button>
+                <button class="buy-btn" onclick="showLogin()" style="cursor: pointer;">Buy Now</button>
+                <button class="cart-btn" onclick="showLogin()" style="cursor: pointer;">Add to Cart</button>
             </div>
 
             <div class="good-stuffs">
@@ -342,6 +440,152 @@
             </tr>
         </table>
     </section>
- 
+
+    <section class="reviews">
+        <h2>Review and Rating</h2>
+
+        <div class="reviewCard">
+            <div class="user">
+                <div class="userIcon">
+                    <img src="../media/icons/profile_3135715.png">
+                </div>
+                <div class="userName">
+                    <span>David</span>
+                </div>
+            </div>
+            <div class="rating">
+                <span>
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </span>
+            </div>
+            <div class="comment">
+                <p>I TRULY LOVE MY HP OFFICEJET PRO 8025 E IT LOOK GREAT DOES VERY THING I WANT FOR MY PRITING NEEDS</p>
+            </div>
+        </div>
+        
+        <div class="reviewCard" style="border-bottom: 1px solid #343434;">
+            <div class="user">
+                <div class="userIcon">
+                    <img src="../media/icons/profile_3135715.png">
+                </div>
+                <div class="userName">
+                    <span>Shishir</span>
+                </div>
+            </div>
+            <div class="rating">
+                <span>
+                    &#9733; &#9733; &#9734; &#9734; &#9734;
+                </span>
+            </div>
+            <div class="comment">
+                <p>Very difficult to reach a real person in product support to help with connecting 
+                    printer to computer or network. Disappointed to find that document feeder does not accommodate envelopes.
+                     Greatest complaint with HP printers is the difficulty of changing from full sheets of paper to envelopes</p>
+            </div>
+        </div>
+    </section>
+
+    
+  <section class="login-form" id="loginForm">
+    <div class="login-container">
+        <label onclick="hideLogin()" style="font-size: 25px; position: absolute; right: 20px; top: 35px; color: #737373e3; cursor: pointer;"> x </label>
+        <div class="login-txt">
+            <span>
+                Please Login to Continue
+            </span>
+        </div>
+      <form action="#">
+        <div class="data">
+            <label for="">Email or Phone:</label>
+            <input type="text">
+        </div>
+        <div class="data">
+            <label for="">Password:</label>
+            <input type="password">
+        </div>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="login-btn">
+            <button type="submit">Login</button>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <span>Not a member?
+                <a href="#">Signup now</a>
+             </span>
+          </div>
+      </form>
+
+    </div>
+  </section>
+
+    <section class="footer">
+
+        <div class="info">
+            <h2>PrintHaven</h2>
+            <p>We are all in one solution <br>
+                for printer located at Mid - Baneshwor.</p>
+        </div>
+
+        <div class="browse">
+            <h2>Browse</h2>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Research</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Printer Selling</li>
+                <li>Printer Repair</li>
+                <li>Printer Replacement</li>
+                <li>Printer Components</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/location.png" alt="">
+                </div>
+                Mid-Baneshwor, Kathmandu
+            </li>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/mail.png" alt="">
+                </div>
+                contact@printhaven.com
+            </li>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/telephone.png" alt="">
+                </div>
+                9814141498
+            </li>
+        </div>
+    </section>
 </body>
 </html>

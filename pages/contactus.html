@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        .hero{
+            display: flex;
+            width: 100%;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contactUs{
+            display: flex;
+            background-color: #f7f7f7;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 500px;
+            width: 800px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-img img{
+            width: 320px;
+            height: 320px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+        <link rel="stylesheet" href="../css/navbar.css">
+
+            <div class="logo">
+                <a href="index.html">Print haven</a>
+            </div>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-btn">
+                    <img src="media/SearchIcon.png">
+                </button>
+            </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+           
+            <li class="dropdown">
+                <a href ="pages/products.html">Products</i></a>
+
+                <section class="nav-submenu">
+                    <ul class="nav-submenu-links">
+                        <li onclick="window.location.href='index.html';">
+                            <p>Inject Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Laser Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Thermal Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Character Printer</p>
+                        </li>
+                        <li onclick="window.location.href='index.html';">
+                            <p>Line Printer</p>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <a href="index.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="index.html">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="contactUs">
+            <div class="left-container">
+                <h2>
+                    Let's Get  In Touch
+                </h2>
+                <div class="contact-img">
+                    <img src="../media/—Pngtree—customer service staff contact us_5410602.png">
+                </div>
+                <div class="connect">
+                    <span>Connect With Us</span>
+                    <div class="social-media-icons">
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="right-container">
+                <form action="">
+                    <h2>Contact Us</h2>
+                    <div class="field">
+                        <p>Full Name</p>
+                        <input type="text" class="input-field" placeholder="Full Name">
+                    </div>
+                    
+                    <div class="field">
+                        <p>E-mail</p>
+                        <input type="text" class="input-field" placeholder="example@gmail.com">
+                    </div>
+                    <div class="field">
+                        <p>Phone No.</p>
+                        <input type="text" class="input-field" placeholder="+977 9815151598">
+                    </div>
+                    
+                    <div class="field">
+                        <p>Message</p>
+                        <textarea name="paragraph_text" cols="50" rows="10" ></textarea>
+                    </div>
+                </form>    
+            </div>
+        </div>
+    </section>
+</body>
+</html>
