@@ -8,12 +8,14 @@
     <script src="../javascript/app.js"></script>
 
     <style>
+        /* Styles for the product information section */
         .productInfo{
             display: flex;
             margin: 50px 100px;
             gap: 50px;
         }
 
+        /* Styles for product image container*/
         .images{
             display: flex;
             flex-direction: column;
@@ -46,6 +48,7 @@
             gap: 10px;
         }
 
+        /* Style for price */
         .info .price{
             display: inline-flex;
             gap: 10px;
@@ -62,6 +65,7 @@
             color: rgba(0, 0, 0, 0.7);
         }
 
+        /* Style for call to action buttons */
         .info .buttons{
             display: inline-flex;
             gap: 10px;
@@ -118,7 +122,7 @@
             color: rgba(0, 0, 0, 0.8);
         }
 
-
+        /* Styles for the specifications table */
         table{
             margin-left: 100px;
             border-collapse: collapse;
@@ -133,6 +137,7 @@
             }
         }
 
+        /* Styles for the reviews section */
         .reviews{
             margin: 20px 100px;
             display: flex;
@@ -164,11 +169,14 @@
             width: 35px;
         }
         
+        /* Styles for the login form section */
         .login-form{
             display: none;
             position: absolute;
             justify-content: center;
             align-items: center;
+
+            /* Centering login form section */
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -222,6 +230,7 @@
     </style>
     
     <script>
+        //Function to change the main image when clicking on the image list
         function changeImage(event) {
             const clickedImage = event.target;
 
@@ -232,12 +241,14 @@
             }
         }
 
+        // Function to show the login form
         function showLogin()
         {
             var p1 = document.getElementById('loginForm');
             p1.style.display = "flex";
         }
         
+        // Function to hide the login form
         function hideLogin()
         {
             var p1 = document.getElementById('loginForm');

@@ -17,6 +17,7 @@
             background: linear-gradient(to right, #d7c8ff, #b8d5e6);
         }
 
+        /* Styling for contactUs container */
         .contactUs{
             display: flex;
             background-color: #f7f7f7;
@@ -63,6 +64,7 @@
             margin-right: 60px;
         }
 
+        /* Styling for form data input fields and buttons */
         form .data label{
             font-size: 15px;
         }
@@ -153,8 +155,10 @@
 
 
 
+    <!-- Hero section with contact information and form -->
     <section class="hero">
         <div class="contactUs">
+            <!-- Left container with contact information -->
             <div class="left-container">
                 <div class="left-container-contents">
                     <h2>
@@ -174,7 +178,7 @@
                 </div>
  
             </div>
-    
+            <!-- Right container with the contact form -->
             <div class="right-container">
                 <form name="messageForm" action="">
                     <h2>Contact Us</h2>
@@ -272,10 +276,12 @@
     <script>
         function validateForm()
         {
+            // Stores input field variable
             var fullName = document.forms["messageForm"]["full-name"].value;
             var clientContact = document.forms["messageForm"]["client-contact"].value;
             var messageDetails = document.forms["messageForm"]["message"].value;
 
+            // checks if input field are empty
             if(fullName == "" || clientContact == "" || messageDetails == "")
             {
                 alert("Emplty fields are present!!! Please enter the values...")

@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../javascript/app.js"></script>
     <style>
-        main
-        {
-            height: 105vh;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
-            column-gap: 7px;
-            row-gap: 7px;
-            margin: 20px 100px;
-        }
+      /* CSS for the main content section (parent of all product container)*/
+      main
+      {
+          height: 105vh;
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+          column-gap: 7px;
+          row-gap: 7px;
+          margin: 20px 100px;
+      }
 
-        .product-container
-        {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            cursor: pointer;
-            background-color: #f3f1f5;
-            padding: 20px 20px;
-        }
+      /* CSS for individual product containers */
+      .product-container
+      {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          cursor: pointer;
+          background-color: #f3f1f5;
+          padding: 20px 20px;
+      }
 
-        .product-container:hover{
-          background-color: rgba(46, 46, 46, 0.126)
-        }
+      .product-container:hover{
+        background-color: rgba(46, 46, 46, 0.126)
+      }
 
+        /* CSS for price section within product containers */
       .product-container .price
       {
           display: inline-flex;
@@ -51,13 +54,14 @@
         color: rgba(0, 0, 0, 0.7);
       }
 
-        main img
-        {
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            height: auto;
-        }
+      /* Styling for images within the main section */
+      main img
+      {
+          width: 100%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          height: auto;
+      }
         
     </style>
 </head>

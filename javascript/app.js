@@ -1,5 +1,3 @@
-
-
 function startSearch() {
     var input = document.getElementById('myInput');
     var filter = input.value;
@@ -7,8 +5,8 @@ function startSearch() {
     // Redirect to products.html with the search query as a parameter
     if(filter != "")
     {
+      //May not work for home in offline mode
         window.location.href = '../pages/products.html?search=' + encodeURIComponent(filter);
-        console.log("search clocked");
     }
     
 }
