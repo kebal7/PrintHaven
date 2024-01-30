@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/app.js"></script>
+
     <style>
-        
+        .hero{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 100px;
+            gap: 20px;
+        }
+
+        .hero .blog-content{
+            display: flex;
+            background-color: #f7f7f7;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.215);
+            padding: 10px;
+        }
+
+        .hero .blog-content .blog-image{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero .blog-content .blog-image img{
+            height: 350px;
+            width: 600px;
+        }
+
+
+        .hero .blog-content .blog-text{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
     
     </style>
 </head>
@@ -18,8 +52,8 @@
         </div>
 
         <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search...">
-            <button class="search-btn">
+            <input type="text" id="myInput" class="search-input" placeholder="Search...">
+            <button  onclick="startSearch()" class="search-btn">
                 <img src="../media/SearchIcon.png">
             </button>
         </div>
@@ -70,10 +104,216 @@
 
 
     <section class="hero">
-        <div class="">
+        <div class="blog-welcome">
+            <h2>A Demonstration of How Technology Shapes Daily Life and Business</h2>
+        </div>
 
+        <div >
+            <div class="blog-text" style="width: auto;">
+                <p>
+                    In the whirlwind of the 21st century, our lives have become intricately 
+                    woven with the threads of technology, creating a tapestry that influences 
+                    every facet of our existence. From the moment we wake up to the time we lay
+                    our heads to rest, technology is the silent orchestrator of our daily routines, 
+                    fundamentally altering the way we live and conduct business.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-content">
+            <div class="blog-image">
+                <img src="../media/blog/smartmirror.png">
+            </div>
+
+            <div class="blog-text">
+                <h2>1. Morning Rituals:</h2>
+                <p>
+                    Imagine waking up to the gentle hum of a smart home assistant, 
+                    your personal AI companion. It not only manages your schedule but 
+                    also adjusts the thermostat to your preferred temperature and cues
+                    up your favorite morning playlist. Technology has seamlessly integrated
+                    into our homes, transforming mundane tasks into automated rituals, providing 
+                    convenience at the touch of a button or a voice command.
+                </p>
+            </div>
+        </div>
+        
+        <div class="blog-content">
+            <div class="blog-text">
+                <h2>2. Work Dynamics:</h2>
+                <p>
+                    The traditional 9-to-5 office culture is undergoing a metamorphosis, 
+                    thanks to the impact of technology on the business landscape. Remote work, 
+                    once a rare privilege, has become a norm, allowing employees to collaborate
+                    across borders without leaving the comfort of their homes. Video conferencing, 
+                    cloud-based collaboration tools, and project management software have become the
+                    backbone of modern businesses, fostering connectivity and productivity in ways unimaginable just a decade ago.
+                </p>
+            </div>
+
+            <div class="blog-image">
+                <img src="../media/blog/remotework.png">
+            </div>
+        </div>
+
+        <div class="blog-content">
+            <div class="blog-image">
+                <img src="../media/blog/onlineshopping.png">
+            </div>
+
+            <div class="blog-text">
+                <h2>3. The Retail Revolution:</h2>
+                <p>
+                    Remember the days of spending hours in crowded malls? <br>
+                    Technology has reshaped the retail experience, bringing 
+                    the mall to your fingertips. E-commerce platforms, powered
+                    by sophisticated algorithms and recommendation engines, have
+                    personalized the way we shop. From virtual try-ons to one-click 
+                    purchases, technology has not only made shopping more convenient 
+                    but has also transformed the entire supply chain, from inventory 
+                    management to last-mile delivery.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-content">
+            <div class="blog-text">
+                <h2>4. Healthcare at Your Fingertips:</h2>
+                <p>
+                    A doctor's visit no longer requires a physical presence. 
+                    Telemedicine has emerged as a game-changer, allowing individuals 
+                    to consult with healthcare professionals from the comfort of 
+                    their homes. Wearable devices equipped with health monitoring
+                    technology provide real-time data, empowering individuals to take
+                    charge of their well-being. Technology has not only improved
+                    patient care but has also increased the efficiency of healthcare delivery systems.
+                </p>
+            </div>
+
+            <div class="blog-image">
+                <img src="../media/blog/healthcare.png">
+            </div>
+        </div>
+
+        <div class="blog-content">
+            <div class="blog-image">
+                <img src="../media/blog/socialconnection.png">
+            </div>
+
+            <div class="blog-text">
+                <h2>5. Social Connections:</h2>
+                <p>
+                    Social media has become the virtual town square where ideas, 
+                    opinions, and experiences are shared globally. Technology has 
+                    revolutionized the way we build and maintain relationships, 
+                    breaking down geographical barriers. Whether connecting with 
+                    long-lost friends or networking with professionals in your field, 
+                    social platforms have become integral to our social fabric, influencing 
+                    how we perceive the world and stay connected.
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="blog-content">
+            <div class="blog-text">
+                <h2>6. Security in the Digital Age:</h2>
+                <p>
+                    As technology permeates every aspect of our lives, 
+                    concerns about privacy and security have risen. From
+                    protecting personal information online to safeguarding 
+                    business data, cybersecurity has become a critical component
+                    of our digital existence. The evolution of encryption, biometrics,
+                    and multi-factor authentication showcases the ongoing battle between 
+                    tech innovators and cyber threats, shaping the landscape of digital security.
+                </p>
+            </div>
+
+            <div class="blog-image">
+                <img src="../media/blog/digitalsecurity.png">
+            </div>
+        </div>
+        
+        <div >
+            <div class="blog-text" style="width: auto;">
+                <p>
+                    In conclusion, the demonstration of how technology has affected daily life 
+                    and business is a testament to the transformative power of innovation. It 
+                    has not only enhanced our efficiency and convenience but has also sparked new 
+                    challenges and ethical considerations. As we navigate this ever-evolving technological 
+                    landscape, one thing remains certain – the impact of technology on our lives is irreversible,
+                     and the only constant is change.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="info">
+            <h2>PrintHaven</h2>
+            <p>We are all in one solution <br>
+                for printer located at Mid - Baneshwor.</p>
+        </div>
+
+        <div class="browse">
+            <h2>Browse</h2>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="research.html">Research</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Printer Selling</li>
+                <li>Printer Repair</li>
+                <li>Printer Replacement</li>
+                <li>Printer Components</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/location.png" alt="">
+                </div>
+                Mid-Baneshwor, Kathmandu
+            </li>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/mail.png" alt="">
+                </div>
+                contact@printhaven.com
+            </li>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/telephone.png" alt="">
+                </div>
+                9814141498
+            </li>
         </div>
     </section>
+
 
 </body>
 </html>

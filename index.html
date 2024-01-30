@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print Haven</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/app.js"></script>
 </head>
     <style>
         .welcome{
@@ -114,8 +115,8 @@
                 </div>
     
                 <div class="search-container">
-                    <input type="text" class="search-input" placeholder="Search...">
-                    <button class="search-btn">
+                    <input type="text" id="myInput" class="search-input" placeholder="Search...">
+                    <button  onclick="startSearch()" class="search-btn">
                         <img src="media/SearchIcon.png">
                     </button>
                 </div>

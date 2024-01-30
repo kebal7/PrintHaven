@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/app.js"></script>
 
     <style>
         .hero{
@@ -101,8 +102,8 @@
         </div>
 
         <div class="search-container">
-            <input type="text" class="search-input" placeholder="Search...">
-            <button class="search-btn">
+            <input type="text" id="myInput" class="search-input" placeholder="Search...">
+            <button  onclick="startSearch()" class="search-btn">
                 <img src="../media/SearchIcon.png">
             </button>
         </div>
@@ -179,7 +180,7 @@
                     <h2>Contact Us</h2>
                     <div class="data">
                         <label for="">Full Name:</label>
-                        <input type="text" name="full-name">
+                        <input type="text" name="full-name" placeholder="ex-David Miller">
                     </div>
 
                     <div class="" style="display: inline-flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;">
@@ -190,17 +191,84 @@
 
                     <div class="data">
                         <label for="">Email or Phone:</label>
-                        <input type="text" name="client-contact">
+                        <input type="text" name="client-contact" placeholder="example@mail.com or +977 9856565686">
                     </div>
                     <div class="data">
                         <label for="">Message:</label>
-                        <textarea name="message" cols="40" rows="8" ></textarea>
+                        <textarea name="message" cols="40" rows="8" placeholder="Write your message here..."></textarea>
                     </div>
                     <button class="send-btn" onclick="validateForm()" style="cursor: pointer;">Send Message</button>
                 </form>    
             </div>
         </div>
     </section>
+
+    <section class="footer">
+
+        <div class="info">
+            <h2>PrintHaven</h2>
+            <p>We are all in one solution <br>
+                for printer located at Mid - Baneshwor.</p>
+        </div>
+
+        <div class="browse">
+            <h2>Browse</h2>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="research.html">Research</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Printer Selling</li>
+                <li>Printer Repair</li>
+                <li>Printer Replacement</li>
+                <li>Printer Components</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <h2>Contact</h2>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/location.png" alt="">
+                </div>
+                Mid-Baneshwor, Kathmandu
+            </li>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/mail.png" alt="">
+                </div>
+                contact@printhaven.com
+            </li>
+            <li>
+                <div class="contact-icon">
+                    <img src="../media/icons/telephone.png" alt="">
+                </div>
+                9814141498
+            </li>
+        </div>
+    </section>
+
+
     <script>
         function validateForm()
         {
@@ -214,7 +282,7 @@
             }
             else
             {
-                alert("Thank you for your feedback")
+                alert("Thank you for reaching out")
             }
         }
     </script>

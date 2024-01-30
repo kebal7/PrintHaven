@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HP Office</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/app.js"></script>
 
     <style>
         .productInfo{
@@ -120,6 +121,7 @@
 
         table{
             margin-left: 100px;
+            border-collapse: collapse;
             th{
                 text-align: left;
                 padding: 10px 15px;
@@ -248,58 +250,57 @@
 <body>
     
     <nav>
-        <link rel="stylesheet" href="../css/navbar.css">
-
-            <div class="logo">
-                <a href="../index.html">Print haven</a>
-            </div>
-
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search...">
-                <button class="search-btn">
-                    <img src="../media/SearchIcon.png">
-                </button>
-            </div>
-
+        <div class="logo">
+            <a href="../index.html">Print haven</a>
+        </div>
+        <div class="search-container">
+            <input type="text" id="myInput" class="search-input" placeholder="Search...">
+            <button  onclick="startSearch()" class="search-btn">
+                <img src="../media/SearchIcon.png">
+            </button>
+        </div>
         <ul class="nav-links">
             <li>
                 <a href="../index.html">Home</a>
             </li>
-           
+        
             <li class="dropdown">
                 <a href ="products.html">Products</i></a>
-
                 <section class="nav-submenu">
-                    <ul class="nav-submenu-links">
-                        <li onclick="window.location.href='index.html';">
+                    <ul class="nav-submenu-links" sty>
+                        <li onclick="window.location.href='products.html';">
                             <p>Inject Printer</p>
                         </li>
-                        <li onclick="window.location.href='index.html';">
+                        <li onclick="window.location.href='products.html';">
                             <p>Laser Printer</p>
                         </li>
-                        <li onclick="window.location.href='index.html';">
+                        <li onclick="window.location.href='products.html';">
                             <p>Thermal Printer</p>
                         </li>
-                        <li onclick="window.location.href='index.html';">
+                        <li onclick="window.location.href='products.html';">
                             <p>Character Printer</p>
                         </li>
-                        <li onclick="window.location.href='index.html';">
+                        <li onclick="window.location.href='products.html';">
                             <p>Line Printer</p>
                         </li>
-                        <li onclick="window.location.href='index.html';">
+                        <li onclick="window.location.href='products.html';">
                             <p>Other Components</p>
                         </li>
                     </ul>
                 </section>
             </li>
             <li>
-                <a href="index.html">Contact Us</a>
+                <a href="contactus.html">Contact Us</a>
             </li>
             <li>
-                <a href="index.html">About Us</a>
+                <a href="aboutus.html">About Us</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
             </li>
         </ul>
     </nav>
+
 
     <section class="bread-crum" style="margin-left: 100px; margin-top: 20px;">
         <a href="products.html" style="color: black;">Products</a> > <a href="" style="color: black;">HP OfficeJet Pro 8025e All-in-One Printer </a>
@@ -536,25 +537,22 @@
             <h2>Browse</h2>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">Products</a>
+                    <a href="products.html">Products</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="contactus.html">Contact Us</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="aboutus.html">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Research</a>
-                </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="research.html">Research</a>
                 </li>
             </ul>
         </div>
@@ -568,7 +566,7 @@
                 <li>Printer Components</li>
             </ul>
         </div>
-
+    
         <div class="contact">
             <h2>Contact</h2>
             <li>
@@ -591,5 +589,6 @@
             </li>
         </div>
     </section>
+
 </body>
 </html>
