@@ -108,60 +108,61 @@
 
     </style>
 <body>
+        <nav>
+                <div class="logo">
+                    <a href="index.html">Print haven</a>
+                </div>
     
-    <nav>
-        <link rel="stylesheet" href="css/navbar.css">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button class="search-btn">
+                        <img src="media/SearchIcon.png">
+                    </button>
+                </div>
+    
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+               
+                <li class="dropdown">
+                    <a href ="pages/products.html">Products</i></a>
+    
+                    <section class="nav-submenu">
+                        <ul class="nav-submenu-links">
+                            <li onclick="window.location.href='pages/products.html';">
+                                <p>Inject Printer</p>
+                            </li>
+                            <li onclick="window.location.href='pages/products.html';">
+                                <p>Laser Printer</p>
+                            </li>
+                            <li onclick="window.location.href='pages/products.html';">
+                                <p>Thermal Printer</p>
+                            </li>
+                            <li onclick="window.location.href='pages/products.html';">
+                                <p>Character Printer</p>
+                            </li>
+                            <li onclick="window.location.href='pages/products.html';">
+                                <p>Line Printer</p>
+                            </li>
+                            <li onclick="window.location.href='pages/products.html';">
+                                <p>Other Components</p>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+                <li>
+                    <a href="pages/contactus.html">Contact Us</a>
+                </li>
+                <li>
+                    <a href="pages/aboutus.html">About Us</a>
+                </li>
+                <li>
+                    <a href="pages/blog.html">Blog</a>
+                </li>
+            </ul>
+        </nav>
 
-            <div class="logo">
-                <a href="index.html">Print haven</a>
-            </div>
-
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search...">
-                <button class="search-btn">
-                    <img src="media/SearchIcon.png">
-                </button>
-            </div>
-
-        <ul class="nav-links">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-           
-            <li class="dropdown">
-                <a href ="pages/products.html">Products</i></a>
-
-                <section class="nav-submenu">
-                    <ul class="nav-submenu-links">
-                        <li onclick="window.location.href='index.html';">
-                            <p>Inject Printer</p>
-                        </li>
-                        <li onclick="window.location.href='index.html';">
-                            <p>Laser Printer</p>
-                        </li>
-                        <li onclick="window.location.href='index.html';">
-                            <p>Thermal Printer</p>
-                        </li>
-                        <li onclick="window.location.href='index.html';">
-                            <p>Character Printer</p>
-                        </li>
-                        <li onclick="window.location.href='index.html';">
-                            <p>Line Printer</p>
-                        </li>
-                        <li onclick="window.location.href='index.html';">
-                            <p>Other Components</p>
-                        </li>
-                    </ul>
-                </section>
-            </li>
-            <li>
-                <a href="index.html">Contact Us</a>
-            </li>
-            <li>
-                <a href="index.html">About Us</a>
-            </li>
-        </ul>
-    </nav>
 
     <section class="banner">
         <section class="welcome">
@@ -171,7 +172,7 @@
                 <br>
                 "Unleash Your Creativity with Us"
             </p>
-            <a href="shop.html" style="color: #ffffff;">Shop Now</a>
+            <a href="pages/products.html" style="color: #ffffff;">Shop Now</a>
         </section>
     </section>
 
@@ -207,7 +208,7 @@
 
     <section class="printer-catagories">
 
-        <div class="product-container" onclick="window.location.href='';">
+        <div class="product-container" onclick="window.location.href='pages/products.html';">
             <img src="media/printercatagories/inject.png"></img>
             <div class="title">
                 <h2>Inject Printer</h2>
@@ -215,7 +216,7 @@
             </div>
           </div>
  
-        <div class="product-container" onclick="window.location.href='';">
+        <div class="product-container" onclick="window.location.href='pages/products.html';">
             <img src="media/printercatagories/laser.png"></img>
             <div class="title">
                 <h2>Laser Printer</h2>
@@ -223,7 +224,7 @@
             </div>
           </div>
  
-        <div class="product-container" onclick="window.location.href='';">
+        <div class="product-container" onclick="window.location.href='pages/products.html';">
             <img src="media/printercatagories/thermal.png"></img>
             <div class="title">
                 <h2>Thermal Printer</h2>
@@ -231,7 +232,7 @@
             </div>
           </div>
  
-        <div class="product-container" onclick="window.location.href='';">
+        <div class="product-container" onclick="window.location.href='pages/products.html';">
             <img src="media/printercatagories/character.png"></img>
             <div class="title">
                 <h2>Character Printer</h2>
@@ -239,7 +240,7 @@
             </div>
           </div>
  
-        <div class="product-container" onclick="window.location.href='';">
+        <div class="product-container" onclick="window.location.href='pages/products.html';">
             <img src="media/printercatagories/line.png"></img>
             <div class="title">
                 <h2>Line Printer</h2>
@@ -247,7 +248,7 @@
             </div>
           </div>
  
-        <div class="product-container" onclick="window.location.href='';">
+        <div class="product-container" onclick="window.location.href='pages/products.html';">
             <img src="media/printercatagories/cartidage.png"></img>
             <div class="title">
                 <h2>Other Components</h2>
@@ -267,25 +268,22 @@
             <h2>Browse</h2>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#">Products</a>
+                    <a href="pages/products.html">Products</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="pages/contactus.html">Contact Us</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="pages/aboutus.html">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="pages/blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Research</a>
-                </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="pages/research.html">Research</a>
                 </li>
             </ul>
         </div>
