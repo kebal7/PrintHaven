@@ -27,9 +27,60 @@
         }
 
         .contact-img img{
-            width: 320px;
-            height: 320px;
+            width: 170px;
+            height: 170px;
         }
+
+        .left-container{
+            width: 40%;
+            height: 100%;
+            background-color: #e8e8e8;
+            border-bottom-left-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+
+        .left-container .left-container-contents{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            margin-left: 60px;
+            gap: 10px;
+           
+        }
+
+
+        .right-container{
+            display: flex;
+            width: 60%;
+            height: 100%;
+        }
+
+        form{
+            margin-top: 60px;
+            margin-right: 60px;
+        }
+
+        form .data label{
+            font-size: 15px;
+        }
+
+        form .data input{
+            width: 80%;
+            padding: 10px 10px;
+        }
+
+        form .send-btn{
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            background-color: #f29d00;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 
@@ -90,44 +141,68 @@
     <section class="hero">
         <div class="contactUs">
             <div class="left-container">
-                <h2>
-                    Let's Get  In Touch
-                </h2>
-                <div class="contact-img">
-                    <img src="../media/—Pngtree—customer service staff contact us_5410602.png">
-                </div>
-                <div class="connect">
-                    <span>Connect With Us</span>
-                    <div class="social-media-icons">
-    
+                <div class="left-container-contents">
+                    <h2>
+                        Let's Get  In Touch
+                    </h2>
+                    <div class="contact-img">
+                        <img src="../media/customerservice.png">
+                    </div>
+                    <div class="contact-txt">
+                        <p>
+                            Contact Us At: <br>
+                            Email:contact@printhaven.com <br>
+                            Phone Number:9814141498 <br>
+                            Address:Mid-Baneshwor,Kathmandu <br>
+                        </p>
                     </div>
                 </div>
+ 
             </div>
     
             <div class="right-container">
-                <form action="">
+                <form name="messageForm" action="">
                     <h2>Contact Us</h2>
-                    <div class="field">
-                        <p>Full Name</p>
-                        <input type="text" class="input-field" placeholder="Full Name">
+                    <div class="data">
+                        <label for="">Full Name:</label>
+                        <input type="text" name="full-name">
                     </div>
-                    
-                    <div class="field">
-                        <p>E-mail</p>
-                        <input type="text" class="input-field" placeholder="example@gmail.com">
+
+                    <div class="data" style="display: inline-flex; gap: 10px; margin-top: 10px; margin-bottom: 10px;">
+                        <label>Gender: </label>
+                        <input type="radio" name="genderDetails" value="male" checked>Male
+                        <input type="radio" name="genderDetails" value="female">Female
                     </div>
-                    <div class="field">
-                        <p>Phone No.</p>
-                        <input type="text" class="input-field" placeholder="+977 9815151598">
+
+                    <div class="data">
+                        <label for="">Email or Phone:</label>
+                        <input type="text" name="client-contact">
                     </div>
-                    
-                    <div class="field">
-                        <p>Message</p>
-                        <textarea name="paragraph_text" cols="50" rows="10" ></textarea>
+                    <div class="data">
+                        <label for="">Message:</label>
+                        <textarea name="message" cols="50" rows="10" ></textarea>
                     </div>
+                    <button class="send-btn" onclick="validateForm()" style="cursor: pointer;">Send Message</button>
                 </form>    
             </div>
         </div>
     </section>
+    <script>
+        function validateForm()
+        {
+            var fullName = document.forms["messageForm"]["full-name"].value;
+            var clientContact = document.forms["messageForm"]["client-contact"].value;
+            var messageDetails = document.forms["messageForm"]["message"].value;
+
+            if(fullName == "" || clientContact == "" || messageDetails == "")
+            {
+                alert("Emplty fields are present!!! Please enter the values...")
+            }
+            else
+            {
+                alert("Thank you for your feedback")
+            }
+        }
+    </script>
 </body>
 </html>
